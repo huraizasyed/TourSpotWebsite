@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tourspot :: Home</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Text">
+        <!-- header section -->
+        <header>
+            <!-- logo -->
+            <img src="imgs/tourspot.png" alt="tourspot logo" class="logo img-fluid">
+            <!-- Navigation(navbar) -->
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span> Dropdown
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Countries</a>
+                            <div class="dropdown-menu">
+                                <a href="uae.html" class="dropdown-item">UAE</a>
+                                <a href="pakistan.html" class="dropdown-item">Pakistan</a>
+                                <a href="turkey.html" class="dropdown-item">Turkey</a>
+                                <a href="malaysia.html" class="dropdown-item">Malaysia</a>
+                                <a href="singapore.html" class="dropdown-item">Singapore</a>
+                                <a href="azerbaijan.html" class="dropdown-item">Azerbaijan</a>
+                                <a href="georgia.html" class="dropdown-item">Georgia</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    </ul>
+                    <div class="ml-auto">
+                        <form class="form-inline searchh">
+                            <label for="search">Search |</label>
+                            <input type="search" id="search" name="search" class="form-control">
+                            <button class="btn-search">Search</button>
+                        </form>
+                    </div>            
+                </div>
+            </nav>
+        </header>
+        
+        <div class="mt-3">
+            <img src="imgs/pass.png" alt="Boarding Pass" class="img1" style="width: 100%;">
+            <br><br>
+            <div class="center">
+                <div class="p1home">
+                    Don't know what to do at your next destination?<br>
+                    No worries! <br> 
+                    <span class="color">tourspot</span> got you. <br>
+                    Just select the country you wish to visit from the countries dropdown at the top of the website. <br><br>
+                    You can now also contact us by just filling out our form linked in the Contact Form. <br>
+                    <p id="lastModified"></p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- buttons for changing font -->
+    <div id="fontButtons" class="center">
+        <button class="btn1" onclick="changeFontSize('increase')" title="Increase Font Size">
+            A+ <span class="tooltip">Increase Font Size</span>
+        </button> |
+        <button class="btn1" onclick="changeFontSize('decrease')" title="Decrease Font Size">
+            A- <span class="tooltip">Decrease Font Size</span>
+        </button>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="center"><p><i>- Happy Journey -</i></p></div>
+    </footer>
+    <script src="font.js"></script> 
+</body>
+</html>

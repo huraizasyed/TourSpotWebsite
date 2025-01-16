@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Text" class="confirm">
+        <!-- displays the text -->
+        <h1>Form Submitted Successfully!</h1>
+        <p>Thank you for submitting the form. We have received your information.</p>
+        <!-- link to go back to homepage -->
+        <a href="home.html">Back to Home</a>
+    </div>    
+    <div id="fontButtons" class="center">
+        <button class="btn1" onclick="changeFontSize('increase')" title="Increase Font Size">
+            A+ <span class="tooltip">Increase Font Size</span>
+        </button> |
+        <button class="btn1" onclick="changeFontSize('decrease')" title="Decrease Font Size">
+            A- <span class="tooltip">Decrease Font Size</span>
+        </button>
+    </div>
+    <script src="font.js"></script>
+</body>
+</html>

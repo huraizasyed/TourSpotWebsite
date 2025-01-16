@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tourspots :: Contact</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id= "Text">
+        <header>
+            <img src="imgs/tourspot.png" alt="tourspot logo" class="logo img-fluid">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>Dropdown
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Countries</a>
+                            <div class="dropdown-menu">
+                                <a href="uae.html" class="dropdown-item">UAE</a>
+                                <a href="pakistan.html" class="dropdown-item">Pakistan</a>
+                                <a href="turkey.html" class="dropdown-item">Turkey</a>
+                                <a href="malaysia.html" class="dropdown-item">Malaysia</a>
+                                <a href="singapore.html" class="dropdown-item">Singapore</a>
+                                <a href="azerbaijan.html" class="dropdown-item">Azerbaijan</a>
+                                <a href="georgia.html" class="dropdown-item">Georgia</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    </ul>
+                    <div class="ml-auto">
+                        <form class="form-inline searchh">
+                            <label for="search">Search |</label>
+                            <input type="search" id="search" name="search" class="form-control">
+                            <button class="btn-search">Search</button>
+                        </form>
+                    </div>            
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <br><h2><img src="imgs/contact.png" alt="contact img" class="img-fluid"></h2>
+            <!-- contact form -->
+            <form method="post" class="form" onsubmit="return submitForm()">
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="someone" class="form-control"> 
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <label for="mail" class="form-label">Email:</label>
+                        <input type="text" name="mail" id="mail" placeholder="someone@gmail.com" class="form-control">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <label for="message" class="form-label">Message:</label><br>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="row my-3 center">
+                    <div class="col-md-4">
+                        <input type="submit" value="Submit" class="form-label" id="subbtn">
+                    </div>
+                </div>
+            </form>       
+        </div> 
+        <p id="lastModified"></p>
+    </div>
+    <div id="fontButtons" class="center">
+        <button class="btn1" onclick="changeFontSize('increase')" title="Increase Font Size">
+            A+ <span class="tooltip">Increase Font Size</span>
+        </button> |
+        <button class="btn1" onclick="changeFontSize('decrease')" title="Decrease Font Size">
+            A- <span class="tooltip">Decrease Font Size</span>
+        </button>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="center"><p><i>- Happy Journey -</i></p></div>
+    </footer>
+    <script src="confirm.js"></script>
+    <script src="font.js"></script>
+</body>
+</html>
